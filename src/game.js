@@ -37,17 +37,25 @@ export class Game {
         cloud.y = 100;
 
         var tree = Sprite.from("/assets/images/tree.png");
-        tree.anchor.set(0.5);
-        tree.x = this.app.screen.width / 5 * 4;
-        tree.y = this.app.screen.height / 2;
-        tree.scale.x = 0.56;
-        tree.scale.y = 0.56;
+        tree.anchor.set(0.85);
+        tree.x = this.app.screen.width;
+        tree.y = this.app.screen.height - 350;
+        tree.scale.x = 0.4;
+        tree.scale.y = 0.5;
         console.log(tree.getBounds());
+
+        var grass = Sprite.from("/assets/images/grass.png");
+        grass.anchor.set(0.04, 1);
+        grass.x = 0;
+        grass.y = this.app.screen.height - 300;
+        grass.scale.x = 1;
+        grass.scale.y = 0.4;
         
         var gamePlay = new Container();
         gamePlay.addChild(clampy);
         gamePlay.addChild(sun);
         gamePlay.addChild(cloud);
+        gamePlay.addChild(grass);
         gamePlay.addChild(tree);
 
         this.app.stage.addChild(gamePlay);
