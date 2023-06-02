@@ -16,6 +16,7 @@ export class Game {
         clampy.y = this.app.screen.height / 5;
         clampy.scale.x = 0.25;
         clampy.scale.y = 0.25;
+        clampy.angle = 15;
         console.log(clampy.getBounds());
 
         var sun = new Graphics();
