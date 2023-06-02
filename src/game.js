@@ -22,7 +22,7 @@ export class Game {
         
         sun.beginFill("red");
         sun.lineStyle(10, "yellow");
-        sun.drawCircle(0, 0, 25); // See how I set the drawing at 0,0? NOT AT 100, 100!
+        sun.drawCircle(0, 0, 50); // See how I set the drawing at 0,0? NOT AT 100, 100!
         sun.endFill();
         // Here we set it at 100,100
         sun.x = 100;
